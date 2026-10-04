@@ -4,6 +4,9 @@ import routes from "./routes/route.js";
 
 const app = express();
 
+// routing
+
+
 dotenv.config();
 const PORT = process.env.PORT;
 
