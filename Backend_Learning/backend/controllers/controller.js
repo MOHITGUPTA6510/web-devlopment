@@ -1,3 +1,3 @@
 export const hello = (req,res)=>{
-    console.log("Working this");
+    res.status(200).json({message:"welcome .."})
 }
