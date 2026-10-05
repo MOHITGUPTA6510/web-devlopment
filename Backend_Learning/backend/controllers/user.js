@@ -21,7 +21,7 @@ export const login = async (req,res) => {
 
         const user = await User.findOne({email});
 
-        if(!user || user.password !== password){
+        if(!user || !(await bcrypt.compare(password,user.password))){
             res.status(401).json({error:error.message});
         }
 
