@@ -3,4 +3,15 @@ url: http://localhost:4012/api/send
 method: POST
 headers:
   Authorization: "112233445566"
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\" :21,\r
+
+    \    \"name\" : \"Mohit\",\r
+
+    \    \"address\" : \"Lucknow\"\r
+
+    }"
 order: 2000
