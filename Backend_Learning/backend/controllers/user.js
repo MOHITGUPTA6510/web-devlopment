@@ -12,6 +12,19 @@ export const signup =  async(req,res) => {
     }
 }
 
-export const login =  (req,res) => {
-    console.log("login ...");
+export const login = async (req,res) => {
+    try{
+        const {email , password} = req.body;
+
+        const user = await User.findOne({email});
+
+        if(!user || user.password !== password){
+            res.status(401).json({error:error.message});
+        }
+
+        res.status(201).json({message:"User is login" , user})
+    }catch (error){
+        console.log(error.message);
+        res.status(500).json({error:error.message})
+    }
 }
