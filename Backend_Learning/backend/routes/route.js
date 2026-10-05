@@ -1,9 +1,12 @@
 import express from "express";
-import {hello} from "../controllers/controller.js";
+import {hello , send , updation , delition} from "../controllers/controller.js";
 import auth from "../middleware/auth.js"; 
 
 const router  = express.Router();
 
-router.get("/greet",auth, hello)
+router.get("/fetch",auth, hello)
+router.post("/send",auth, send )
+router.put("/update",auth, updation )
+router.delete("/delete",auth, delition )
 
 export default router;

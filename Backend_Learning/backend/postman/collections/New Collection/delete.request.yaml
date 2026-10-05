@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://localhost:4012/api/send
+method: POST
+headers:
+  Authorization: "112233445566"
+order: 1042
