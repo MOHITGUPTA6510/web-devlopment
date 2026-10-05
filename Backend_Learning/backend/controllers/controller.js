@@ -1,3 +1,3 @@
 export const hello = (req,res)=>{
-    console.log("Working");
+    console.log("Working this");
 }
