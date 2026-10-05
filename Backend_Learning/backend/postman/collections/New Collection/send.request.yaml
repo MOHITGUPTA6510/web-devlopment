@@ -7,11 +7,11 @@ body:
   type: json
   content: "{\r
 
-    \    \"id\" :21,\r
+    \    \"title\" : \"cricket\",\r
 
-    \    \"name\" : \"Mohit\",\r
+    \    \"description\" : \"this is game play by bat and ball\" \r
 
-    \    \"address\" : \"Lucknow\"\r
+    }\r
 
-    }"
+    \    "
 order: 2000

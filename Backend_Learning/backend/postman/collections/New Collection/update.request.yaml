@@ -1,6 +1,16 @@
 $kind: http-request
-url: http://localhost:4012/api/update
+url: http://localhost:4012/api/update/6ac399e9fd415e759192235f
 method: PUT
 headers:
   Authorization: "112233445566"
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\" : \"animal\",\r
+
+    \    \"description\":\"a living thing which can grow and eventually died\"\r
+
+    }"
+examples: .resources/update.resources/examples
 order: 3000

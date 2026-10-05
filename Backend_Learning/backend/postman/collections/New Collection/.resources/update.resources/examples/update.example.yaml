@@ -1,0 +1,33 @@
+$kind: http-example
+request:
+  url: http://localhost:4012/api/update/6ac399e9fd415e759192235f
+  method: PUT
+  headers:
+    Authorization: "112233445566"
+  body:
+    type: json
+    content: "{\r
+
+      \    \"title\" : \"animal\",\r
+
+      \    \"description\":\"a living thing which can grow and eventually died\"\r
+
+      }"
+response:
+  statusCode: 500
+  statusText: Internal Server Error
+  headers:
+    x-powered-by: Express
+    content-type: application/json; charset=utf-8
+    content-length: "38"
+    etag: W/"26-EU9mbxEwCzMzDFVGyCvr5AzDJpU"
+    date: Mon, 05 Oct 2026 13:34:46 GMT
+    connection: keep-alive
+    keep-alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "error": "description is not defined"
+      }
+order: 1791207376359

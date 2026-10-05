@@ -1,0 +1,18 @@
+import mongoose from "mongoose";
+
+const todoSchema = new mongoose.Schema({
+    title :{
+        type:String,
+        repuired:true
+    },
+    description:{
+        type:String,
+        required:true
+    }
+},{
+    timestamps:true
+});
+
+const Todo = mongoose.model("todo" , todoSchema);
+
+export default Todo;
