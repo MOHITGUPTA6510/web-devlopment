@@ -1,10 +1,13 @@
 import User from "../models/user.js"; 
+import bcrypt from "bcrypt";
 
 export const signup =  async(req,res) => {
     try{
         const {username , email , password} = req.body;
 
-        const user = await User.create({username,email,password});
+        const hashpassword = await bcrypt.hash(password,10);
+
+        const user = await User.create({username,email , password:hashpassword});
         res.status(201).json({message:"User data is stored" , user})
     }catch (error){
         console.log(error.message);
