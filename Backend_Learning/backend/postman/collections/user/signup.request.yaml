@@ -1,4 +1,15 @@
 $kind: http-request
-url: ""
+url: http://localhost:4012/api/user/signup
 method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"username\" : \"Mohit\",\r
+
+    \    \"email\" : \"mohit@dev.com\",\r
+
+    \    \"password\" : \"1234567890\"\r
+
+    }"
 order: 1791209708965
