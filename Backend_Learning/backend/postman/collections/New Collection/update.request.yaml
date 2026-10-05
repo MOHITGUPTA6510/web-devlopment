@@ -12,5 +12,4 @@ body:
     \    \"description\":\"a living thing which can grow and eventually died\"\r
 
     }"
-examples: .resources/update.resources/examples
 order: 3000

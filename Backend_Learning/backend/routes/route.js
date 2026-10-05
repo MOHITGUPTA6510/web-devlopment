@@ -7,6 +7,7 @@ const router  = express.Router();
 router.get("/fetch",auth, retreive)
 router.post("/send",auth, send )
 router.put("/update/:id",auth, updation )
-router.delete("/delete",auth, delition )
+router.delete("/delete/:id",auth, delition )
+
 
 export default router;

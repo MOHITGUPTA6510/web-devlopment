@@ -1,6 +1,6 @@
 $kind: http-request
-url: http://localhost:4012/api/send
-method: POST
+url: http://localhost:4012/api/delete/6ac399e9fd415e759192235f
+method: DELETE
 headers:
   Authorization: "112233445566"
 order: 1042

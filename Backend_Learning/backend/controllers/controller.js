@@ -38,6 +38,15 @@ export const updation =async(req,res) => {
     }
 }
 
-export const delition = (req,res)=>{
-    res.status(200).json({message:"deleting  message"})
+export const delition = async(req,res)=>{
+    try{
+        const {id} = req.params;
+        const todo = await Todo.findByIdAndDelete(
+            id
+        )
+        res.status(200).json({message:"deleting  message",todo})
+    }catch (error){
+        console.log(error.message);
+        res.status(500).json({error: error.message})
+    }
 }
